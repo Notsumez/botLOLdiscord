@@ -11,6 +11,7 @@ const client = new Client({
   ]
 });
 
+// Comando /lol
 client.on("messageCreate", (message) => {
     if(message.author.bot) return;
 
@@ -29,6 +30,7 @@ client.on("messageCreate", (message) => {
     }
 });
 
+// Verificação se o bot está online
 client.on('ready', (e) => {
     console.log(`${e.user.tag} esta Online!`);
 })
